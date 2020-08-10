@@ -1,7 +1,8 @@
 import React from 'react';
+import PlaceList from '../components/PlaceList';
 
 const UserPlaces = () => {
-  return 
+  return <PlaceList />;
 };
 
 export default UserPlaces;
