@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {CSSTransition} from 'react-transition-group';
 
+import Backdrop from "./Backdrop";
 import './Modal.css';
 
 const ModalOverlay = props => {
@@ -23,7 +25,18 @@ const ModalOverlay = props => {
 };
 
 const Modal = props => {
-  
+   return <React.Fragment>
+          {props.show && <Backdrop onClick={props.onCancel} />}
+          <CSSTransition
+            in={props.show}
+            mountOnEnter
+            unmountOnExit
+            timeout={200}
+            classNames="modal"
+          >
+
+              </CSSTransition>
+       </React.Fragment>
 };
 
 export default Modal
