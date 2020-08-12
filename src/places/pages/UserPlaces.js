@@ -11,8 +11,8 @@ const DUMMY_PLACES = [{
     imageURL: "image of the EMpire state building",
     address: " 20 W 31st st, NEW YORK, NY 10001",
     lacation: {
-        lat: 40.7484,
-        lng: -73.98785
+        lat: 40.7484405,
+        lng: -73.9878584
     },
     creator: 'U1' 
 }];
