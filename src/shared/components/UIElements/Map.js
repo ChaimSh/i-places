@@ -1,9 +1,12 @@
-import React from 'react';
+import React {useRef} from 'react';
 
 import './Map.css';
 
 const Map = props => {
-  return <div className={`map ${props.className}`} style={props.style}></div>
+   const map = new window.google.maps.Map();
+
+
+    return <div className={`map ${props.className}`} style={props.style}></div>  
 };
 
 export default Map
