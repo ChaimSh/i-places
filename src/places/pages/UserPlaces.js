@@ -18,6 +18,7 @@ const DUMMY_PLACES = [{
 }];
 const UserPlaces = () => {
    const userId = useParams().userId;
+   // figure out why loadedPlaces doesn't work
    const loadedPlaces = DUMMY_PLACES.filter(place => place.creator === userId);
    return <PlaceList items={DUMMY_PLACES}/>;
 //    loadedPlaces
