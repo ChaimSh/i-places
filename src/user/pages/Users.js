@@ -1,6 +1,6 @@
 import React from 'react';
 import UsersList from '../components/UsersList';
-import UserList from '../components/UsersList';
+// import UserList from '../components/UsersList';
 
 const Users = () => {
   const USERS = [
@@ -12,7 +12,7 @@ const Users = () => {
     }
   ];
 
-  return <UserList items={USERS}/>;
+  return <UsersList items={USERS}/>;
 };
 
 export default Users;
