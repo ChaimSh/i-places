@@ -16,10 +16,10 @@ const inputReducer = (state, action) => {
 };
 
 const Input = props => {
-   useRuducer(inputReducer);
+   const [inputState, dispatch] = useRuducer(inputReducer {value: "", isValid: false});
 
     const changeHandler = event => {
-         
+        dispatch({type: "CHANGE", val: event.target.value }) 
     };
 
     const element = props.element === 'input' ? ( <input 
@@ -27,15 +27,23 @@ const Input = props => {
         type={props.type} 
         placeholder={props.placeholder}
         onChange={changeHandler}
+        value={inputState.value}
         />
    ) : (
-   <textarea id={props.id} rows={props.rows || 3} onChange={changeHandler}/>
+   <textarea 
+   id={props.id} 
+   rows={props.rows || 3} 
+   onChange={changeHandler}
+   value={inputState.value}
+   />
    );
 
 
-  return <div className={'form-control'}>
+  return <div className={`form-control ${!inputState.isValid && 
+  'form-control--invalid'}`}>
     <label htmlFor={props.id}>{props.label}</label>
     {element}
+   {!inputState.isValid && <p>{props.errorText}</p>}
   </div>
   };
 
