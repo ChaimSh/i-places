@@ -12,7 +12,7 @@ const Button = props => {
             href={props.href}
             >
              {props.children}
-            </a></a>
+            </a>
         );
     }
     if (props.to) {
