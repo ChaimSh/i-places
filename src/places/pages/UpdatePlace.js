@@ -4,7 +4,7 @@ import {useParams} from 'react-router-dom';
 
 import Input from '../../shared/components/FormElements/Input';
 import Button from '../../shared/components/FormElements/Button';
-import {useForm} from '../../shared/hooks/form-hooks';
+import {useForm} from '../../shared/hooks/form-hook.js';
 import "./PlaceForm.css";
 import { VALIDATOR_REQUIRE, VALIDATOR_MINLENGTH } from '../../shared/util/validators'
 import Card from '../../shared/components/UIElements/Card';    
