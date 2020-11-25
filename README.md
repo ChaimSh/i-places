@@ -1,10 +1,10 @@
 # iPlaces
 
-iPlaces is an application built inorder for a user to be able to list their visted places. 
+iPlaces is an application built in order for a user to be able to list their visted places. 
 This goes along with being to reference their visit with a map and picture to go a long. 
 
 ## Technologies
-The front-end of this app is built with React.js. Making use of modern practices such as custom hooks, styling and libraries.
+The front-end of this application (currently being viewed) is built with React.js. Making use of modern practices such as custom hooks, styling and libraries.
 
-The back end of this aplication will be using Node.js and Express.js. MongoDB for Data-basing.
-Please navigate to the back end here.
+The back-end of this application will be using Node.js and Express.js. MongoDB for Data-basing. (Although not totally complete yet)
+Please navigate to the back end [here](https://github.com/ChaimSh/i-places-backend).
