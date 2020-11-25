@@ -1,6 +1,6 @@
 # iPlaces
 
-iPlaces is an application built in order for a user to be able to list their visted places. 
+iPlaces is an application built in order for a user to be able to list their visited places. 
 This goes along with being to reference their visit with a map and picture to go a long. 
 
 ## Technologies
